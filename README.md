@@ -57,13 +57,6 @@ Data overview:
   - `subject`: the subject of the article.
   - `date`: the date the article was published.
 - Fake.csv: A dataset containing fake news articles. Columns are the same as True.csv.
-### [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet)
-FakeNewsNet is a data repository with news content, social context, and spatiotemporal information for studying fake news on social media. The repository contains two datasets: politifact and gossipcop.
-Data overview:
- - `id` - Unique identifider for each news
- - `url` - Url of the article from web that published that news 
- - `title` - Title of the news article
- - `tweet_ids` - Tweet ids of tweets sharing the news. This field is list of tweet ids separated by tab.
 ## Methods
 ### 1. Data Exploration
 - Check missing values
