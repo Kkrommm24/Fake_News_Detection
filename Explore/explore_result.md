@@ -17,4 +17,17 @@
 - Split the data into training and testing sets.
 ## UTK dataset
 ### Data overview
-
+- The dataset contains 5 columns and 20800 rows
+- Label column is the target variable, which has two classes: `1` - unreliable and `0` - reliable. The dataset is balanced with 10413 unreliable and 10387 reliable news.
+- There are missing values in `title` and `text` column
+- There are 19803 unique news title and 20386 unique news text out of 20800 examples.
+### Preprocess check list
+- Remove the `author` column as it is not useful for the classification task.
+- Combine the `title` and `text` columns or treat them as separate features.
+- Remove null values.
+- Remove duplicate news(title and text).
+- Remove outliers.
+  - Examples with only spaces (text length <=2)
+  - Examples with text content "source Add To The Conversation Using Facebook Comments" (text length = 54)
+  - Examples with non-English text
+- Remove punctuation, special characters, and stopwords.
